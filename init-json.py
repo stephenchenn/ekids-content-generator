@@ -37,7 +37,7 @@ default_attributes = {
     "video_url": ""
 }
 
-types = ["EKIDS1", "EKIDS2"]
+types = ["TINYTOTS", "LITTLESTARS", "REFLECTORS"]
 
 # Create the Python dictionary with the desired structure
 data = {

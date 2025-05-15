@@ -44,7 +44,8 @@ def get_sundays_month(year, month):
 dbx.files_create_folder_v2(FOLDER_PATH)
 
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-ekids = ["EKIDS1", "EKIDS2"]
+# TINNYTOTS used to be EKIDS 1, REFLECTORS used to be EKIDS 2
+ekids = ["TINYTOTS", "LITTLESTARS", "REFLECTORS"]
 
 for ekid in ekids:
     print(f"creating folders for {ekid}...\n")

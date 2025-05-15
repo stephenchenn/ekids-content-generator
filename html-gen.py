@@ -58,10 +58,12 @@ for year, ekids_data in data.items():
     for ekids, months in ekids_data.items():
         
         title=''
-        if ekids=='EKIDS1':
-            title='EKids 1 (2-6 Years Old)'
-        else:
-            title='Ekids 2 (7-12 years Old)'
+        if ekids=='TINYTOTS':
+            title='TINYTOTS'
+        elif ekids=='LITTLESTARS':
+            title='LITTLESTARS'
+        else: 
+            title='REFLECTORS'
 
         html_content += f'<div class="split-half"><h2>{title}</h2><br>'
         for month, dates in months.items():
