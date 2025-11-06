@@ -36,6 +36,7 @@ def find_deepest_subfolders(dbx, path):
 
     # If the current folder doesn't contain any subfolders, it must be the deepest
     if not has_subfolders:
+        print(f"found subfolder: {path}\n")
         subfolders.append(path)
 
     # Handle pagination if needed
@@ -53,7 +54,7 @@ def find_deepest_subfolders(dbx, path):
 ACCESS_TOKEN = sys.argv[2]
 
 # Path to the folder in Dropbox
-FOLDER_PATH = '/church-ekids-program'  # Ensure it starts with /
+FOLDER_PATH = f"/church-ekids-program/{year}"
 
 # Initialize a Dropbox object
 dbx = dropbox.Dropbox(ACCESS_TOKEN)
